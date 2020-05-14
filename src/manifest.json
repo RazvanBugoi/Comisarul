@@ -9,10 +9,13 @@
       "tabs", 
       "<all_urls>"
     ],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.comisarul.ro"],
+        "run_at": "document_idle",
+        "js": ["background.js"]
+      }
+    ],
     "browser_action": {
       "default_title": "Comisarul",
       "default_icon": {
