@@ -1,26 +1,26 @@
 {
-    "name": "Comisarul",
-    "version": "2.0",
-    "permissions": [
-      "activeTab",
-      "clipboardRead",
-      "clipboardWrite",
-      "contextMenus", 
-      "tabs", 
-      "<all_urls>"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["https://www.comisarul.ro"],
-        "run_at": "document_idle",
-        "js": ["background.js"]
-      }
-    ],
-    "browser_action": {
-      "default_title": "Comisarul",
-      "default_icon": {
-        "64": "images/logo.png"
+  "name": "Comisarul",
+  "version": "2.0",
+  "permissions": [
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "tabs",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.comisarul.ro/"],
+      "run_at": "document_idle",
+      "js": ["background.js"]
     }
-  },
-    "manifest_version": 2
+  ],
+  "browser_action": {
+    "default_title": "Comisarul",
+    "default_icon": {
+      "64": "images/logo.png"
   }
+},
+  "manifest_version": 2
+}
