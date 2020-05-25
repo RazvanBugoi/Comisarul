@@ -1,5 +1,5 @@
 {
-  "name": "Comisarul",
+  "name": "Comisarul Adblock",
   "version": "2.0",
   "permissions": [
     "activeTab",
@@ -11,12 +11,12 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://*.comisarul.ro/"],
+      "matches": ["https://www.comisarul.ro/"],
       "run_at": "document_idle",
       "js": ["background.js"]
     },
       {
-        "matches": ["https://*.comisarul.ro/*"],
+        "matches": ["https://*.comisarul.ro/articol/*"],
         "run_at": "document_idle",
         "js": ["articles.js"]
       }
