@@ -1,0 +1,5 @@
+#corpArticol > div,
+#reclama_foooter,
+#reclama_articol_top_mobile{
+    display: none!important
+}

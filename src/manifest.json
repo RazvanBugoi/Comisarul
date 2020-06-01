@@ -18,6 +18,7 @@
       {
         "matches": ["https://*.comisarul.ro/articol/*"],
         "run_at": "document_idle",
+        "css": ["articol.css"],
         "js": ["articles.js"]
       }
   ],

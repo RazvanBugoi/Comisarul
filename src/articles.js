@@ -9,3 +9,12 @@ let page = articles.map((element) => {
       element.remove()
     }
   })
+
+let middleAdds = document.getElementById('corpArticol').getElementsByTagName('div');
+  // for(let i=0; i<middleAdds.length; i++) {
+  //   middlesAdds[i].innerHTML = '';
+  // }
+middleAdds.item(0).remove();
+
+
+
